@@ -8,14 +8,102 @@ import { Component } from '@angular/core';
 export class Tab2Page {
 
 
-n1 = 1;
+valor= 1;
+pont1 = 0;
+pont2 = 0;
+vit1= 0;
+vit2= 0;
+
+
 
   constructor() {}
 
- exibirNumero() {
+ exibirNumero1() {
 
-
+  this.valor = 1;
 
   }
+
+  exibirNumero3(){
+
+    this.valor = 3;
+
+  }
+
+  exibirNumero6(){
+
+    this.valor = 6;
+
+  }
+
+  exibirNumero9(){
+
+    this.valor = 9;
+
+  }
+
+  exibirNumero12(){
+
+    this.valor = 12;
+
+  }
+
+  adicionarSoma1(){
+
+    this.pont1 += this.valor;
+    this.valor =1;
+    if (this.pont1 >= 12) {
+      this.vit1 += 1;
+      this.pont1 = 0;
+      this.pont2 = 0;
+
+  }
+
+}
+
+adicionarSoma2(){
+
+  this.pont2 += this.valor;
+  this.valor =1;
+  if (this.pont2 >= 12) {
+    this.vit2 += 1;
+    this.pont1 = 0;
+    this.pont2 = 0;
+
+}
+
+}
+
+adicionarSubt1(){
+
+  this.valor =1;
+  if (this.pont1 >= 1)
+    {
+      this.pont1 -= this.valor;
+
+
+    }
+
+}
+
+adicionarSubt2(){
+
+  this.valor =1;
+  if (this.pont2 >= 1)
+    {
+      this.pont2 -= this.valor;
+
+    }
+}
+
+limparTudo(){
+
+ this.valor = 1;
+ this.pont1 = 0;
+ this.pont2 = 0;
+ this.vit1 = 0;
+ this.vit2 = 0;
+
+}
 
 }

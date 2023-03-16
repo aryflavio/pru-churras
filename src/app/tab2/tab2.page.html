@@ -9,26 +9,26 @@
 <ion-content [fullscreen]="true">
 
 
-  <h1> VALENDO: </h1>
+  <h1> VALENDO: {{valor}} </h1>
 
 
 
   <ion-grid>
     <ion-row>
       <ion-col>
-        <ion-button color="dark" expand="full" (click)="exibirNumero()">1</ion-button>
+        <ion-button color="dark" expand="full" (click)="exibirNumero1()">1</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button color="dark" expand="full">3</ion-button>
+        <ion-button color="dark" expand="full" (click)="exibirNumero3()">3</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button color="dark" expand="full">6</ion-button>
+        <ion-button color="dark" expand="full" (click)="exibirNumero6()">6</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button color="dark" expand="full">9</ion-button>
+        <ion-button color="dark" expand="full" (click)="exibirNumero9()">9</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button color="dark" expand="full">12</ion-button>
+        <ion-button color="dark" expand="full" (click)="exibirNumero12()">12</ion-button>
       </ion-col>
     </ion-row>
     <br>
@@ -44,30 +44,30 @@
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-button class="bt1" color="dark" >+</ion-button>
+        <ion-button class="bt1" color="dark" (click)="adicionarSoma1()">+ </ion-button>
       </ion-col>
 
       <ion-col>
-        <ion-button class="bt1" color="dark" >+</ion-button>
+        <ion-button class="bt1" color="dark" (click)="adicionarSoma2()">+</ion-button>
       </ion-col>
     </ion-row>
     <br>
 
   <ion-row>
     <ion-col>
-      <h3>0</h3>
+      <h3>{{pont1}}</h3>
     </ion-col>
     <ion-col>
-      <h3>0</h3>
+      <h3>{{pont2}}</h3>
     </ion-col>
   </ion-row>
 
     <ion-row>
       <ion-col>
-        <ion-button class="bt1" color="dark" >-</ion-button>
+        <ion-button class="bt1" color="dark" (click)="adicionarSubt1()">-</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button class="bt1" color="dark">-</ion-button>
+        <ion-button class="bt1" color="dark" (click)="adicionarSubt2()">-</ion-button>
       </ion-col>
 
     </ion-row>
@@ -87,7 +87,7 @@
     </ion-col>
 
     <ion-col>
-      <h3>0</h3>
+      <h3>{{vit1}}</h3>
     </ion-col>
   </ion-row>
 
@@ -99,14 +99,14 @@
     </ion-col>
 
     <ion-col>
-      <h3>0</h3>
+      <h3>{{vit2}}</h3>
     </ion-col>
   </ion-row>
 </ion-card>
 
 
 <br>
-  <ion-button expand="block" color="dark">LIMPAR</ion-button>
+  <ion-button expand="block" color="dark" (click)="limparTudo()">LIMPAR</ion-button>
 
 </ion-content>
 
