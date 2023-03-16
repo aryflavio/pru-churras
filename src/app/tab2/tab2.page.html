@@ -8,75 +8,107 @@
 
 <ion-content [fullscreen]="true">
 
-  <h1>VALENDO: </h1>
+
+  <h1> VALENDO: </h1>
 
 
 
   <ion-grid>
     <ion-row>
       <ion-col>
-        <ion-button color="danger" expand="full">1</ion-button>
+        <ion-button color="dark" expand="full" (click)="exibirNumero()">1</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button color="danger" expand="full">1</ion-button>
+        <ion-button color="dark" expand="full">3</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button color="danger" expand="full">1</ion-button>
+        <ion-button color="dark" expand="full">6</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button color="danger" expand="full">1</ion-button>
+        <ion-button color="dark" expand="full">9</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button color="danger" expand="full">1</ion-button>
-      </ion-col>
-    </ion-row>
-    <br>
-    <br>
-
-    <ion-row>TIME 1</ion-row>
-    <ion-row>
-      <ion-col>
-        <ion-button color="danger" shape="round">+</ion-button>
-      </ion-col>
-
-
-      <ion-col>
-        <ion-button color="danger" shape="round">+</ion-button>
+        <ion-button color="dark" expand="full">12</ion-button>
       </ion-col>
     </ion-row>
     <br>
+    <br>
+
     <ion-row>
       <ion-col>
-        <ion-button color="danger" shape="round">-</ion-button>
+        <h3>TIME 1</h3>
       </ion-col>
       <ion-col>
-        <ion-button color="danger" shape="round">-</ion-button>
+        <h3>TIME 2</h3>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button class="bt1" color="dark" >+</ion-button>
+      </ion-col>
+
+      <ion-col>
+        <ion-button class="bt1" color="dark" >+</ion-button>
+      </ion-col>
+    </ion-row>
+    <br>
+
+  <ion-row>
+    <ion-col>
+      <h3>0</h3>
+    </ion-col>
+    <ion-col>
+      <h3>0</h3>
+    </ion-col>
+  </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button class="bt1" color="dark" >-</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="bt1" color="dark">-</ion-button>
       </ion-col>
 
     </ion-row>
 
   </ion-grid>
 
-  <br>
-
-  <H1>PARTIDAS</H1>
 
   <br>
 
-  <H2>TIME 1</H2>
+  <H1>PARTIDAS:</H1>
 
-  <Br>
+<ion-card>
 
-  <H2>TIME 2</H2>
+  <ion-row>
+    <ion-col>
+      <h3>TIME 1</h3>
+    </ion-col>
+
+    <ion-col>
+      <h3>0</h3>
+    </ion-col>
+  </ion-row>
+
+
+  <br>
+  <ion-row>
+    <ion-col>
+      <h3>TIME 2</h3>
+    </ion-col>
+
+    <ion-col>
+      <h3>0</h3>
+    </ion-col>
+  </ion-row>
+</ion-card>
+
+
+<br>
+  <ion-button expand="block" color="dark">LIMPAR</ion-button>
 
 </ion-content>
 
 
 
-<ion-footer>
-  <ion-toolbar color="dark" class="btn">
-    <ion-title class="ion-text-center">
-      LIMPAR!
-    </ion-title>
-  </ion-toolbar>
-</ion-footer>

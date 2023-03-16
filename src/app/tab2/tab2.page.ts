@@ -7,6 +7,15 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
+
+n1 = 1;
+
   constructor() {}
+
+ exibirNumero() {
+
+
+
+  }
 
 }
