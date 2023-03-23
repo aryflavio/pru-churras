@@ -7,6 +7,20 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
+
+  dice = 'assets/dice.png';
+  dicegif = 'assets/dice-gif';
+
+
   constructor() {}
+
+  tamanho= 0;
+  valor = 0;
+
+  mudarImagem(){
+
+  }
+
+
 
 }
