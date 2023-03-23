@@ -74,10 +74,8 @@ adicionarSoma2(){
 
 }
 
-adicionarSubt1(){
-
-  this.valor =1;
-  if (this.pont1 >= 1)
+subt1(){
+if (this.pont1 >= 1)
     {
       this.pont1 -= this.valor;
 
@@ -86,17 +84,15 @@ adicionarSubt1(){
 
 }
 
-adicionarSubt2(){
-
-  this.valor =1;
-  if (this.pont2 >= 1)
+subt2(){
+if (this.pont2 >= 1)
     {
       this.pont2 -= this.valor;
 
     }
 }
 
-limparTudo(){
+limpar(){
 
  this.valor = 1;
  this.pont1 = 0;
@@ -107,3 +103,5 @@ limparTudo(){
 }
 
 }
+
+

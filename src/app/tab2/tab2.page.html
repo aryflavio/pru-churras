@@ -8,9 +8,9 @@
 
 <ion-content [fullscreen]="true">
 
-
+<ion-card>
   <h1> VALENDO: {{valor}} </h1>
-
+</ion-card>
 
 
   <ion-grid>
@@ -33,6 +33,8 @@
     </ion-row>
     <br>
     <br>
+
+
 
     <ion-row>
       <ion-col>
@@ -64,15 +66,16 @@
 
     <ion-row>
       <ion-col>
-        <ion-button class="bt1" color="dark" (click)="adicionarSubt1()">-</ion-button>
+        <ion-button class="bt1" color="dark" (click)="subt1()">-</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button class="bt1" color="dark" (click)="adicionarSubt2()">-</ion-button>
+        <ion-button class="bt1" color="dark" (click)="subt2()">-</ion-button>
       </ion-col>
 
     </ion-row>
 
   </ion-grid>
+
 
 
   <br>
@@ -106,7 +109,7 @@
 
 
 <br>
-  <ion-button expand="block" color="dark" (click)="limparTudo()">LIMPAR</ion-button>
+  <ion-button expand="block" color="dark" (click)="limpar()">LIMPAR</ion-button>
 
 </ion-content>
 
